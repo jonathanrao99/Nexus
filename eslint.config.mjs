@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Generated HTML string exports (very long lines)
+    "lib/*-body-html.ts",
   ]),
 ]);
 
