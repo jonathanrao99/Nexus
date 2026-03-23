@@ -2,6 +2,16 @@
 
 Nexus is a high-performance marketing site built with Next.js App Router, Tailwind CSS v4, and optimized Three.js WebGL effects.
 
+Production URL: [https://nexus-ai-template.vercel.app](https://nexus-ai-template.vercel.app)
+
+## Screenshots
+
+![](./screenshot-01.png)
+![](./screenshot-02.png)
+![](./screenshot-03.png)
+![](./screenshot-04.png)
+![](./screenshot-05.png)
+
 ## Quick Start
 
 1. Install dependencies:
@@ -35,13 +45,13 @@ Nexus is a high-performance marketing site built with Next.js App Router, Tailwi
 - Device pixel ratio is capped for smoother animation on high-density displays.
 - `lucide-react` imports are optimized through `next.config.ts`.
 
-## Screenshots
+## SEO and Crawling
 
-![](./screenshot-01.png)
-![](./screenshot-02.png)
-![](./screenshot-03.png)
-![](./screenshot-04.png)
-![](./screenshot-05.png)
+- Canonical and social metadata is configured in `app/layout.tsx`.
+- Dynamic sitemap: [https://nexus-ai-template.vercel.app/sitemap.xml](https://nexus-ai-template.vercel.app/sitemap.xml)
+- Dynamic robots policy: [https://nexus-ai-template.vercel.app/robots.txt](https://nexus-ai-template.vercel.app/robots.txt)
+- LLM crawl guidance: [https://nexus-ai-template.vercel.app/llms.txt](https://nexus-ai-template.vercel.app/llms.txt)
+
 
 ## License
 
