@@ -9,8 +9,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "extract:html": "node scripts/extract-home-body.mjs && node scripts/extract-features-body.mjs"
+    "lint": "eslint"
   },
   "dependencies": {
     "lucide-react": "^0.577.0",

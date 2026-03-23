@@ -1,39 +1,47 @@
 # Nexus
 
-Marketing site for Nexus: Next.js App Router, Tailwind CSS v4, and lightweight WebGL (Three.js) for hero and ambient backgrounds.
+Nexus is a high-performance marketing site built with Next.js App Router, Tailwind CSS v4, and optimized Three.js WebGL effects.
 
-## Requirements
+## Quick Start
 
-- Node.js 20+ (recommended)
+1. Install dependencies:
+   - `npm install`
+2. Run local development:
+   - `npm run dev`
+3. Open:
+   - [http://localhost:3000](http://localhost:3000)
 
 ## Scripts
 
 | Command | Purpose |
 |--------|---------|
-| `npm run dev` | Local dev server at [http://localhost:3000](http://localhost:3000) |
-| `npm run build` | Production build |
-| `npm run start` | Run the production server (after `build`) |
-| `npm run lint` | ESLint |
-| `npm run extract:html` | Regenerate `lib/home-body-html.ts` and `lib/features-body-html.ts` from `legacy/` HTML |
+| `npm run dev` | Start the local development server |
+| `npm run build` | Build for production |
+| `npm run start` | Start the production server |
+| `npm run lint` | Run ESLint checks |
 
-After editing source HTML under `legacy/`, run `extract:html` so the embedded page bodies stay in sync.
+## Project Structure
 
-## Project layout
+- `app/` — App Router pages and global styles
+- `components/layout/` — Navigation, footer, and shared page shell
+- `components/home/` — Home page client logic and hero WebGL setup
+- `components/features/` — Features page client logic
+- `components/webgl/` — Shared ambient and themed WebGL components
+- `lib/` — Utility functions and generated page content exports
 
-- **`app/`** — Routes: `/`, `/features`, `/architecture`, `/network`, `/pricing`, `/login`, plus global styles and fonts.
-- **`components/layout/`** — Shared shell: navigation, footer, marketing page wrapper, ambient backdrop.
-- **`components/home/`** — Home page client UI and home hero WebGL.
-- **`components/features/`** — Features page client UI.
-- **`components/webgl/`** — Shared WebGL helpers and `ThemedWebGLHero` for page variants.
-- **`lib/`** — Generated HTML strings, scroll helpers, Lucide polling, etc.
-- **`legacy/`** — Original static HTML used as the source for extraction (not served directly).
+## Performance Notes
 
-## Stack
+- WebGL rendering pauses when the tab is hidden to reduce wasted GPU cycles.
+- Device pixel ratio is capped for smoother animation on high-density displays.
+- `lucide-react` imports are optimized through `next.config.ts`.
 
-- [Next.js](https://nextjs.org/) 16 · [React](https://react.dev/) 19  
-- [Tailwind CSS](https://tailwindcss.com/) 4  
-- [Three.js](https://threejs.org/) for canvas effects  
-- [Lucide React](https://lucide.dev/) icons (tree-shaken via `experimental.optimizePackageImports` in `next.config.ts`)
+## Screenshots
+
+![](./screenshot-01.png)
+![](./screenshot-02.png)
+![](./screenshot-03.png)
+![](./screenshot-04.png)
+![](./screenshot-05.png)
 
 ## License
 
