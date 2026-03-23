@@ -1,8 +1,17 @@
 # Nexus
 
-Nexus is a high-performance marketing site built with Next.js App Router, Tailwind CSS v4, and optimized Three.js WebGL effects.
+Nexus is a modern AI infrastructure marketing site built with Next.js, Tailwind CSS, and lightweight WebGL visuals.
+
+The goal is to keep the experience fast, polished, and easy to maintain while still feeling premium.
 
 Production URL: [https://nexus-ai-template.vercel.app](https://nexus-ai-template.vercel.app)
+
+## What’s Included
+
+- Multi-page marketing experience (`/`, `/features`, `/architecture`, `/network`, `/pricing`, `/login`)
+- Reusable layout system for shared navigation/footer and page shells
+- Canvas-based visual effects tuned for smooth performance
+- Production-ready metadata, sitemap, robots, and LLM crawl guidance
 
 ## Screenshots
 
@@ -14,12 +23,9 @@ Production URL: [https://nexus-ai-template.vercel.app](https://nexus-ai-template
 
 ## Quick Start
 
-1. Install dependencies:
-   - `npm install`
-2. Run local development:
-   - `npm run dev`
-3. Open:
-   - [http://localhost:3000](http://localhost:3000)
+1. Install dependencies: `npm install`
+2. Start local dev: `npm run dev`
+3. Open [http://localhost:3000](http://localhost:3000)
 
 ## Scripts
 
@@ -39,6 +45,13 @@ Production URL: [https://nexus-ai-template.vercel.app](https://nexus-ai-template
 - `components/webgl/` — Shared ambient and themed WebGL components
 - `lib/` — Utility functions and generated page content exports
 
+## Deployment
+
+This project is deployed on Vercel. Any push to the connected branch can trigger a new deployment.
+
+- Live site: [https://nexus-ai-template.vercel.app](https://nexus-ai-template.vercel.app)
+- Analytics: enabled with `@vercel/analytics`
+
 ## Performance Notes
 
 - WebGL rendering pauses when the tab is hidden to reduce wasted GPU cycles.
@@ -51,7 +64,6 @@ Production URL: [https://nexus-ai-template.vercel.app](https://nexus-ai-template
 - Dynamic sitemap: [https://nexus-ai-template.vercel.app/sitemap.xml](https://nexus-ai-template.vercel.app/sitemap.xml)
 - Dynamic robots policy: [https://nexus-ai-template.vercel.app/robots.txt](https://nexus-ai-template.vercel.app/robots.txt)
 - LLM crawl guidance: [https://nexus-ai-template.vercel.app/llms.txt](https://nexus-ai-template.vercel.app/llms.txt)
-
 
 ## License
 
